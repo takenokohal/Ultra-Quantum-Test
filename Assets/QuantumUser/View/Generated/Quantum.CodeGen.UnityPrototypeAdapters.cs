@@ -74,19 +74,6 @@ namespace Quantum.Prototypes.Unity {
       return result;
     }
   }
-  [System.SerializableAttribute()]
-  public unsafe partial class FireShootPrototype : Quantum.QuantumUnityPrototypeAdapter<Quantum.Prototypes.FireShootPrototype> {
-    public Quantum.Prototypes.TimeCounterPrototype TimeCounter;
-    public Quantum.QuantumEntityPrototype OwnerRef;
-    partial void ConvertUser(Quantum.QuantumEntityPrototypeConverter converter, ref Quantum.Prototypes.FireShootPrototype prototype);
-    public override Quantum.Prototypes.FireShootPrototype Convert(Quantum.QuantumEntityPrototypeConverter converter) {
-      var result = new Quantum.Prototypes.FireShootPrototype();
-      converter.Convert(this.TimeCounter, out result.TimeCounter);
-      converter.Convert(this.OwnerRef, out result.OwnerRef);
-      ConvertUser(converter, ref result);
-      return result;
-    }
-  }
 }
 #pragma warning restore 0109
 #pragma warning restore 1591

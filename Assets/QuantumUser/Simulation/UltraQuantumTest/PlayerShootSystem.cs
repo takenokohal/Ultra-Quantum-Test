@@ -65,7 +65,6 @@ namespace Quantum.QuantumUser.Simulation.UltraQuantumTest
             var otherPlayer = list.FirstOrDefault(value => value != player);
             if (otherPlayer == default)
             {
-                Debug.Log("SingleMode");
                 return FPVector2.Right;
             }
 

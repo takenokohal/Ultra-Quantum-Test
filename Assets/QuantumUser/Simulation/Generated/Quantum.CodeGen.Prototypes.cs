@@ -88,21 +88,6 @@ namespace Quantum.Prototypes {
     }
   }
   [System.SerializableAttribute()]
-  [Quantum.Prototypes.Prototype(typeof(Quantum.FireShoot))]
-  public unsafe class FireShootPrototype : ComponentPrototype<Quantum.FireShoot> {
-    public Quantum.Prototypes.TimeCounterPrototype TimeCounter;
-    public MapEntityId OwnerRef;
-    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
-        Quantum.FireShoot component = default;
-        Materialize((Frame)f, ref component, in context);
-        return f.Set(entity, component) == SetResult.ComponentAdded;
-    }
-    public void Materialize(Frame frame, ref Quantum.FireShoot result, in PrototypeMaterializationContext context = default) {
-        this.TimeCounter.Materialize(frame, ref result.TimeCounter, in context);
-        PrototypeValidator.FindMapEntity(this.OwnerRef, in context, out result.OwnerRef);
-    }
-  }
-  [System.SerializableAttribute()]
   [Quantum.Prototypes.Prototype(typeof(Quantum.Input))]
   public unsafe partial class InputPrototype : StructPrototype {
     public Button Right;

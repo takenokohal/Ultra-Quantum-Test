@@ -1,0 +1,9 @@
+input
+{
+button Right;
+button Left;
+button Up;
+button Down;
+
+button Fire;
+}

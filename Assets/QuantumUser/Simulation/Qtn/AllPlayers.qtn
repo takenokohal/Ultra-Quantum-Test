@@ -1,0 +1,4 @@
+﻿singleton component AllPlayersManager
+{
+list<EntityRef> AllPlayers;
+}

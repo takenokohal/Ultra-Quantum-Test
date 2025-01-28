@@ -1,0 +1,5 @@
+﻿component Bullet
+{
+FP LifeTime;
+EntityRef Owner;
+}

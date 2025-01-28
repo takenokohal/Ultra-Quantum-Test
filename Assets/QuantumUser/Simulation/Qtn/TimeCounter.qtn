@@ -1,0 +1,4 @@
+﻿struct TimeCounter
+{
+FP CurrentTime;
+}

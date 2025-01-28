@@ -1,0 +1,5 @@
+﻿component FireShoot
+{
+TimeCounter TimeCounter;
+EntityRef OwnerRef;
+}

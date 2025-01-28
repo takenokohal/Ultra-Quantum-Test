@@ -1,0 +1,5 @@
+component UltraPlayer
+{
+AssetRef<UltraPlayerConfig> PlayerConfig;
+TimeCounter BulletCoolTimeTimeCounter;
+}
